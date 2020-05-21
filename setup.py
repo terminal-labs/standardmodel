@@ -14,6 +14,7 @@ setup(
     "utilities-package_cli-metapackage@git+https://gitlab.com/terminallabs/utilitiespackage/metapackages/utilities-package_cli-metapackage.git@master#egg=utilitiespackageclimetapackage&subdirectory=utilitiespackageclimetapackage",
     "rambo-vagrant@git+https://github.com/terminal-labs/rambo.git",
     "tornado<5.0,>=4.2.1",
+    "pyzmq<17.1.0",
     "salt==2018.3.3",
     "ansible==2.9.0",
   ],
