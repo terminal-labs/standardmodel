@@ -9,7 +9,9 @@ setup(
   url = 'https://github.com/terminal-labs/standardmodel',
   download_url = 'https://github.com/terminal-labs/standardmodel/archive/master.zip',
   install_requires=[
-          'click',
+        "setuptools",
+        "utilities-package@git+https://gitlab.com/terminallabs/utilitiespackage/utilities-package.git@master#egg=utilitiespackage&subdirectory=utilitiespackage",
+        "utilities-package_cli-metapackage@git+https://gitlab.com/terminallabs/utilitiespackage/metapackages/utilities-package_cli-metapackage.git@master#egg=utilitiespackageclimetapackage&subdirectory=utilitiespackageclimetapackage",
       ],
   classifiers=[  # Optional
     'Development Status :: 3 - Alpha',
@@ -18,4 +20,8 @@ setup(
     'License :: OSI Approved :: MIT License',
     'Programming Language :: Python :: 3.6',
   ],
+  entry_points="""
+      [console_scripts]
+      standardmodel=standardmodel.cli:main
+   """,
 )
