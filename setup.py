@@ -12,6 +12,8 @@ setup(
         "setuptools",
         "utilities-package@git+https://gitlab.com/terminallabs/utilitiespackage/utilities-package.git@master#egg=utilitiespackage&subdirectory=utilitiespackage",
         "utilities-package_cli-metapackage@git+https://gitlab.com/terminallabs/utilitiespackage/metapackages/utilities-package_cli-metapackage.git@master#egg=utilitiespackageclimetapackage&subdirectory=utilitiespackageclimetapackage",
+        "salt",
+        "ansible",
       ],
   classifiers=[  # Optional
     'Development Status :: 3 - Alpha',
