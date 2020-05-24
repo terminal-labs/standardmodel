@@ -10,7 +10,7 @@ setup(
   download_url = 'https://github.com/terminal-labs/standardmodel/archive/master.zip',
   install_requires=[
     "setuptools<=45",
-    "utilities-package@git+https://gitlab.com/terminallabs/utilitiespackage/utilities-package.git@master#egg=utilitiespackage",
+    "utilities-package@git+https://gitlab.com/terminallabs/utilitiespackage/utilities-package.git",
     "utilities-package_cli-metapackage@git+https://gitlab.com/terminallabs/utilitiespackage/metapackages/utilities-package_cli-metapackage.git@master#egg=utilitiespackageclimetapackage&subdirectory=utilitiespackageclimetapackage",
     "rambo-vagrant@git+https://github.com/terminal-labs/rambo.git",
     "tornado<5.0,>=4.2.1",
