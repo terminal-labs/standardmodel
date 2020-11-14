@@ -22,6 +22,8 @@ setup(
   install_requires=pins + [
     "utilities-package@git+https://gitlab.com/terminallabs/utilitiespackage/utilities-package.git",
     "utilities-package_cli-metapackage@git+https://gitlab.com/terminallabs/utilitiespackage/metapackages/utilities-package_cli-metapackage.git",
+    "finestructure@git+https://github.com/terminal-labs/finestructure.git",
+    "domainwall@git+https://github.com/terminal-labs/domainwall.git",
     "rambo-vagrant@git+https://github.com/terminal-labs/rambo.git",
   ],
   classifiers=[  # Optional
