@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Python application
+name: full-build
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       run: |
         sudo bash .repo/mock_vagrant.sh
         sudo bash .repo/download_python_environment_manager.sh
-        cd /vagrant; sudo bash .tmp/python-environment-manager-master/makefile_resources/scripts_python/conda/install_apt_dependencies.sh inflation vagrant vagrant
-        cd /vagrant; sudo bash .tmp/python-environment-manager-master/makefile_resources/scripts_python/conda/install_python.sh inflation vagrant vagrant
-        cd /vagrant; sudo bash .tmp/python-environment-manager-master/makefile_resources/scripts_python/conda/install_app.sh inflation vagrant vagrant
-        cd /vagrant; sudo bash .tmp/python-environment-manager-master/makefile_resources/scripts_python/conda/run_tests.sh inflation vagrant vagrant
+        cd /vagrant; sudo bash .tmp/python-environment-manager-master/makefile_resources/scripts_python/install_apt_dependencies.sh inflation vagrant vagrant
+        cd /vagrant; sudo bash .tmp/python-environment-manager-master/makefile_resources/scripts_python/install_python.sh inflation vagrant vagrant
+        cd /vagrant; sudo bash .tmp/python-environment-manager-master/makefile_resources/scripts_python/install_app.sh inflation vagrant vagrant
+        cd /vagrant; sudo bash .tmp/python-environment-manager-master/makefile_resources/scripts_python/run_tests.sh inflation vagrant vagrant
