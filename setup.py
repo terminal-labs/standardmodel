@@ -6,8 +6,8 @@ pins = [
     #"Werkzeug<1",
     #"tornado<5.0,>=4.2.1",
     #"pyzmq<17.1.0",
-    "salt==2018.3.3",
-    "ansible==2.9.0",
+    #"salt==2018.3.3",
+    #"ansible==2.9.0",
 ]
 
 setup(
