@@ -1,11 +1,11 @@
 from distutils.core import setup
 
 pins = [
-    "setuptools<=45",
-    "PySocks!=1.5.7,>=1.5.6",
-    "Werkzeug<1",
-    "tornado<5.0,>=4.2.1",
-    "pyzmq<17.1.0",
+    #"setuptools<=45",
+    #"PySocks!=1.5.7,>=1.5.6",
+    #"Werkzeug<1",
+    #"tornado<5.0,>=4.2.1",
+    #"pyzmq<17.1.0",
     "salt==2018.3.3",
     "ansible==2.9.0",
 ]
@@ -20,6 +20,7 @@ setup(
   url = 'https://github.com/terminal-labs/standardmodel',
   download_url = 'https://github.com/terminal-labs/standardmodel/archive/master.zip',
   install_requires=pins + [
+    "utilities-package-pinion@git+https://gitlab.com/terminallabs/utilitiespackage/utilities-package-pinion.git",
     "utilities-package@git+https://gitlab.com/terminallabs/utilitiespackage/utilities-package.git",
     "utilities-package_cli-metapackage@git+https://gitlab.com/terminallabs/utilitiespackage/metapackages/utilities-package_cli-metapackage.git",
     "finestructure@git+https://github.com/terminal-labs/finestructure.git",
