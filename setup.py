@@ -1,14 +1,6 @@
 from distutils.core import setup
 
-pins = [
-    #"setuptools<=45",
-    #"PySocks!=1.5.7,>=1.5.6",
-    #"Werkzeug<1",
-    #"tornado<5.0,>=4.2.1",
-    #"pyzmq<17.1.0",
-    #"salt==2018.3.3",
-    #"ansible==2.9.0",
-]
+pins = []
 
 setup(
   name = 'standardmodel',
@@ -26,6 +18,8 @@ setup(
     "finestructure@git+https://github.com/terminal-labs/finestructure.git",
     "domainwall@git+https://github.com/terminal-labs/domainwall.git",
     "rambo-vagrant@git+https://github.com/terminal-labs/rambo.git",
+    "salt==2018.3.3",
+    "ansible==2.9.0",
   ],
   classifiers=[  # Optional
     'Development Status :: 3 - Alpha',
