@@ -17,7 +17,6 @@ setup(
     "utilities-package_cli-metapackage@git+https://gitlab.com/terminallabs/utilitiespackage/metapackages/utilities-package_cli-metapackage.git",
     "finestructure@git+https://github.com/terminal-labs/finestructure.git",
     "domainwall@git+https://github.com/terminal-labs/domainwall.git",
-    "rambo-vagrant@git+https://github.com/terminal-labs/rambo.git",
     "salt==2018.3.3",
     "ansible==2.9.0",
   ],
